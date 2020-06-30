@@ -1,0 +1,63 @@
+1.
+In a row of trees, the i-th tree produces fruit with type tree[i].
+You start at any tree of your choice, then repeatedly perform the following steps:
+Add one piece of fruit from this tree to your baskets. If you cannot, stop.
+Move to the next tree to the right of the current tree. If there is no tree to the right, stop.
+Note that you do not have any choice after the initial choice of starting tree: you must perform step 1, then step 2, then back to step 1, then step 2, and so on until you stop.
+You have two baskets, and each basket can carry any quantity of fruit, but you want each basket to only carry one type of fruit each.
+What is the total amount of fruit you can collect with this procedure?
+Example 1:
+Input: [1,2,1]
+Output: 3
+Explanation: We can collect [1,2,1].
+Example 2:
+Input: [0,1,2,2]
+Output: 3
+Explanation: We can collect [1,2,2].
+If we started at the first tree, we would only collect [0, 1].
+Example 3:
+Input: [1,2,3,2,2]
+Output: 4
+Explanation: We can collect [2,3,2,2].
+If we started at the first tree, we would only collect [1, 2].
+Example 4:
+Input: [3,3,3,1,2,1,1,2,3,3,4]
+Output: 5
+Explanation: We can collect [1,2,1,1,2].
+If we started at the first tree or the eighth tree, we would only collect 4 fruits.
+Note:
+1 <= tree.length <= 40000
+0 <= tree[i] < tree.length
+
+2.
+There is a special keyboard with all keys in a single row.
+Given a string keyboard of length 26 indicating the layout of the keyboard (indexed from 0 to 25), initially your finger is at index 0. To type a character, you have to move your finger to the index of the desired character. The time taken to move your finger from index i to index j is |i - j|.
+You want to type a string word. Write a function to calculate how much time it takes to type it with one finger.
+Example 1:
+Input: keyboard = "abcdefghijklmnopqrstuvwxyz", word = "cba"
+Output: 4
+Explanation: The index moves from 0 to 2 to write 'c' then to 1 to write 'b' then to 0 again to write 'a'.
+Total time = 2 + 1 + 1 = 4.
+Constraints:
+keyboard.length == 26
+keyboard contains each English lowercase letter exactly once in some order.
+1 <= word.length <= 10^4
+word[i] is an English lowercase letter.
+
+3.
+You are given a license key represented as a string S which consists only alphanumeric character and dashes. The string is separated into N+1 groups by N dashes.
+Given a number K, we would want to reformat the strings such that each group contains exactly K characters, except for the first group which could be shorter than K, but still must contain at least one character. Furthermore, there must be a dash inserted between two groups and all lowercase letters should be converted to uppercase.
+Given a non-empty string S and a number K, format the string according to the rules described above.
+Example 1:
+Input: S = "9B2A-2c-9-y", K = 4
+Output: "9B2A-2C9Y"
+Explanation: The string S has been split into two parts, each part has 4 characters.
+Note that the two extra dashes are not needed and can be removed.
+Example 2:
+Input: S = "2-7g-6-E", K = 2
+Output: "2-7G-6E"
+Explanation: The string S has been split into three parts, each part has 2 characters except the first part as it could be shorter as mentioned above.
+Note:
+The length of string S will not exceed 12,000, and K is a positive integer.
+String S consists only of alphanumerical characters (a-z and/or A-Z and/or 0–9) and dashes(-).
+String S is non-empty.

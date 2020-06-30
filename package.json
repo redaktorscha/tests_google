@@ -1,0 +1,19 @@
+{
+  "name": "tests_google",
+  "version": "1.0.0",
+  "description": "my response to 'https://medium.com/javascript-in-plain-english/interviewing-at-google-javascript-assessment-questions-f9bf0c0df157'",
+  "main": "01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redaktorscha/tests_google.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redaktorscha/tests_google/issues"
+  },
+  "homepage": "https://github.com/redaktorscha/tests_google#readme"
+}
